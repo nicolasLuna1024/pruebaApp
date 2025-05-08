@@ -38,6 +38,13 @@ Este repositorio contiene una aplicación móvil desarrollada con **Ionic** que 
 
 
 ### 🏠 Pantalla principal
+![image](https://github.com/user-attachments/assets/a5e8e687-f2dd-4ea5-a775-c1a0e756e051)
+![image](https://github.com/user-attachments/assets/033bfd87-fdb7-4123-9bde-50e8a5da7233)
+### 📱 Pantalla en celular android
+![image](https://github.com/user-attachments/assets/b16d9a48-7770-4dca-a89f-96bc66ab0919)
+![image](https://github.com/user-attachments/assets/f61eb773-4afd-4f75-94af-96c348c87c52)
+
+
 
 ![Pantalla principal](ruta/a/tu/imagen1.png)
 
