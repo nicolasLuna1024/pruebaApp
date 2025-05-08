@@ -34,6 +34,8 @@ Este repositorio contiene una aplicación móvil desarrollada con **Ionic** que 
     ```
 
 ## 🖼️ Capturas de Pantalla
+![image](https://github.com/user-attachments/assets/8e33ca3b-1cf6-4103-9716-c3b8c9a0ae0c)
+
 
 ### 🏠 Pantalla principal
 
@@ -45,10 +47,7 @@ Este repositorio contiene una aplicación móvil desarrollada con **Ionic** que 
 
 ## 📥 Entregables
 
-- Repositorio de GitHub.
-- PDF con capturas y fotos de la app funcionando.
 
-## ⚡ Notas
 
-Utiliza mi **API Key** para validar la entrega.
+
 
