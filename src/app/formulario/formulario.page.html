@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Formulario Firebase Nicolas Luna</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="submitForm()">
+    <ion-item>
+      <ion-label position="stacked">Nombre</ion-label>
+      <ion-input [(ngModel)]="formData.nombre" name="nombre" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Correo Electrónico</ion-label>
+      <ion-input type="email" [(ngModel)]="formData.correo" name="correo" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Edad</ion-label>
+      <ion-input type="number" [(ngModel)]="formData.edad" name="edad" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Fecha de la Actividad</ion-label>
+      <ion-input type="date" [(ngModel)]="formData.fechaActividad" name="fechaActividad" required></ion-input>
+    </ion-item>
+
+    <div>
+      <label for="tipoActividad">Tipo de Actividad</label>
+      <select id="tipoActividad" name="tipoActividad" [(ngModel)]="formData.tipoActividad" required>
+        <option value="Deporte">Deporte</option>
+        <option value="Cultural">Cultural</option>
+        <option value="Educativo">Educativo</option>
+      </select>
+    </div>
+
+    <ion-item>
+      <ion-label position="stacked">Duración (horas)</ion-label>
+      <ion-input type="number" [(ngModel)]="formData.duracionHoras" name="duracionHoras" required></ion-input>
+    </ion-item>
+
+    <div>
+      <label for="actividadGrupo">Actividad en Grupo</label>
+      <input type="checkbox" id="actividadGrupo" name="actividadGrupo" [(ngModel)]="formData.actividadGrupo">
+    </div>
+  
+    <div>
+      <label for="satisfaccion">Satisfacción (1 a 5)</label>
+      <input
+        type="number"
+        id="satisfaccion"
+        name="satisfaccion"
+        [(ngModel)]="formData.satisfaccion"
+        min="1"
+        max="5"
+        step="1"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="materiales">Materiales Usados</label>
+      <select [(ngModel)]="formData.materialesSeleccionados" name="materialesSeleccionados" class="form-control">
+        <option *ngFor="let material of materiales" [value]="material">{{ material }}</option>
+      </select>
+    </div>
+
+    <ion-item>
+      <ion-label position="stacked">Comentarios</ion-label>
+      <ion-textarea [(ngModel)]="formData.comentarios" name="comentarios"></ion-textarea>
+    </ion-item>    
+    
+    <ion-button expand="full" type="submit">Enviar</ion-button>
+
+
+
+
+  </form>
+    
+</ion-content>
